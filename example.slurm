@@ -16,5 +16,7 @@ source env/bin/activate
 
 # Run the code
 # -u means unbuffered stdio
-python -u main.py
+# Connect to the visdom server on ncc1
+# Replace PORT with the actual port of the Visdom server.
+python -u main.py --visdom_server http://ncc1.clients.dur.ac.uk --visdom_port PORT
 
